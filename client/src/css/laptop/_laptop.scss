@@ -1,0 +1,23 @@
+@media screen and (min-width: 900px) {
+
+    .app{
+        display: flex;
+        flex-direction: column;
+         height: 100vh;
+         max-height: 800px;
+         max-width: 400px;
+         margin: auto;
+         border: solid 1px $as_ash;
+    }
+
+    .channel-list-container{
+        max-width: 400px;
+
+    }
+
+    .submit-message{
+        max-width: 400px;
+
+    }
+
+}

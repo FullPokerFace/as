@@ -1,0 +1,18 @@
+
+@import './global/global';
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    // outline: solid 1px $as_ash
+}
+
+
+
+
+
+@import './mobile/mobile';
+@import './laptop/laptop';

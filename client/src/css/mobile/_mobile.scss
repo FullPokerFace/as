@@ -1,0 +1,137 @@
+
+
+.app{
+    display: flex;
+    flex-direction: column;
+     height: 100vh;
+}
+
+.channel-list-label{
+    background: $as_grey ;
+    color: $as_light;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+
+}
+
+.channel-select-arrow{
+    position: absolute;
+    right: 20px;
+    background: url("../assets/icons/channel-select-arrow.svg");
+    background-size: cover;
+    width: 20px;
+    height: 12px;
+    transition: .4s;
+    
+
+    &.closed{
+        transform: rotate(180deg);
+    }
+}
+
+.channel{
+    background: $as_light;
+    color: $as_grey ;
+    border: solid 1px $as_sky;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.channel-list-container{
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    transform: translateY(-100%);
+    transition: .4s;
+    z-index: 5;
+
+    &.closed{
+        transform: translateY(0);
+
+    }
+}
+
+
+// Messages 
+
+.message-list{
+    padding: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex: 1;
+
+
+    .message{
+
+        .time{
+            color: $as_ash;
+            font-size: .8rem;
+            margin: 10px 0;
+
+        }
+
+        .text{
+            background-color: $as_blue;
+            padding: 15px 20px;
+            color: $as_light;
+            border-radius: 20px;
+            border-bottom-left-radius: 0px;
+            display: inline-block;
+            max-width: 100%;
+            overflow-x: auto;
+        }
+
+
+    }
+}
+
+//Submit Message
+
+.submit-message{
+    height: 100px;
+    padding: 20px;
+    width: 100vw;
+
+    .form-control{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .submit-message-input{
+            padding: 20px 50px 20px 30px;
+            background-color: $as_light;
+            border: solid 1px $as_sky;
+            border-radius: 50px;
+            outline : none;
+            color: $as_grey;
+            width: 100%;
+        }
+
+        .submit-button{
+            min-width: 25px;
+            min-height: 18px;
+            background-image: url('../assets/icons/submit-message-icon.svg');
+            background-size: cover;
+            border: 0;
+            outline: 0;
+            background-color: transparent;
+            margin-left: -50px;
+            cursor: pointer;
+
+        }
+
+        button:disabled{
+            opacity: .5;
+        }
+    }
+}
+
+  
