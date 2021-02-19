@@ -1,4 +1,4 @@
-## AlphaSense Message Board
+## Message Board
 
 # Installation
 
